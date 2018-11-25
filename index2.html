@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content=""/>
+    <title>Moje Portfolio</title>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="css/fontello.css"/>
+    <script src="scrollreveal.min.js"></script>
+
+    <script>
+        function odliczanie()
+        {
+            var dzisiaj = new Date();
+
+            var godzina = dzisiaj.getHours();
+            if(godzina<10)
+            {
+                godzina = "0" + godzina;
+            }
+            var minuta = dzisiaj.getMinutes();
+            if(minuta<10)
+            {
+                minuta = "0" + minuta;
+            }
+            var sekunda = dzisiaj.getSeconds();
+            if(sekunda<10)
+            {
+                sekunda = "0" + sekunda;
+            }
+
+            var rok = dzisiaj.getFullYear();
+            var miesiac = dzisiaj.getMonth()+1;
+            var dzien = dzisiaj.getDate();
+
+            document.getElementById("zegar").innerHTML = rok + " / " + miesiac + " / " + dzien + " | " + godzina + " : " + minuta + " : " + sekunda;
+
+            setTimeout("odliczanie()", 1000);
+        }
+    </script>
+
+        <style>
+ 
+            /* ukrycie elementów do czasu uruchomienia biblioteki ScrollReveal */
+            .sr .fooReveal { visibility: hidden; }
+   
+        </style>
+
+    <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body onload="odliczanie()">
+    <header id="naglowek">
+        <h1>Witaj na moim portfolio</h1>
+        <h2>Zapraszam do przejrzenia</h2>
+        <a href="#nawigacja"><button id="first-button">Zaczynajmy!</button></a>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-tlo" id="nawigacja">
+            <a class="navbar-brand" href="#">
+                <img src="icon.svg" width="30" height="30" class="d-inline-block mr-2 align-bottom alt=">
+                Portfolio
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#naglowek">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#photos">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#me">O mnie</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Umiejętności</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+                <div class="d-inline">
+                    <div id="zegar"></div>
+                </div>
+            </div>
+    </nav>
+
+    <main>
+
+        <section id="photos">
+
+            <div class="container">
+
+                <div class="writter-section">
+                    <h2>Galeria moich zdjęć</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat repellendus necessitatibus odit nobis rem reiciendis laborum itaque laudantium libero. Numquam saepe rerum earum fugit. Illum, facilis minus tempora quisquam velit sequi modi voluptates, voluptatem dolore natus ab! Magni labore quas excepturi totam assumenda laboriosam modi? Eos dolor in beatae!
+                    </p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo1.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo2.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo3.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo4.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo5.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo6.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo7.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo8.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo9.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo10.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo11.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                        <figure>
+                            <img src="photo12.jpg" class="img-fluid">
+                            <figcaption>Lorem ipsum</figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr id="first-hr" color="#33CC99" width="50%" noshade="noshade"/>
+
+        <section id="me">
+
+            <div class="container">
+
+                <div class="writter-section">
+                    <h2>Czym się pasjonuje</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat repellendus necessitatibus odit nobis rem reiciendis laborum itaque laudantium libero. Numquam saepe rerum earum fugit. Illum, facilis minus tempora quisquam velit sequi modi voluptates, voluptatem dolore natus ab! Magni labore quas excepturi totam assumenda laboriosam modi? Eos dolor in beatae!</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 col-lg-4">
+
+                        <div id="me-photo" class="img-fluid">
+                            <img src="Me.jpg" class="mx-auto d-block"/>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-8">
+
+                        <div id="me-description">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat repellendus necessitatibus odit nobis rem reiciendis laborum itaque laudantium libero. Numquam saepe rerum earum fugit. Illum, facilis minus tempora quisquam velit sequi modi voluptates, voluptatem dolore natus ab! Magni labore quas excepturi totam assumenda laboriosam modi? Eos dolor in beatae! Phasellus ullamcorper vitae odio at efficitur. Ut quis porta lorem, at vulputate turpis. Sed faucibus condimentum enim at ornare. Aliquam dignissim condimentum pellentesque. Mauris quis tortor odio. Morbi et arcu enim.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr id="double-hr" color="#FFCC33" width="75%" noshade="noshade"/>
+
+        <section id="skills">
+
+            <div class="container">
+
+                <div class="writter-section">
+                    <h2>Moje umiejętności</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat repellendus necessitatibus odit nobis rem reiciendis laborum itaque laudantium libero. Numquam saepe rerum earum fugit. Illum, facilis minus tempora quisquam velit sequi modi voluptates, voluptatem dolore natus ab! Magni labore quas excepturi totam assumenda laboriosam modi? Eos dolor in beatae!</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+
+                        <div id="skills-writter">
+                            <div id="icon">
+                                <i class="demo-icon icon-keyboard"></i>
+                            </div>
+                            <div id="title-skills">
+                                <h3>Front-end developer</h3>
+                            </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quidem placeat sit non, qui nemo cum ducimus, omnis tempore eum fugiat, iure sint! Quasi consequatur ex cumque recusandae repudiandae libero corporis optio nisi eveniet praesentium laudantium sapiente aliquid dolorum natus, sequi est provident corrupti placeat. Quo quod voluptates qui officiis?</p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+        
+                        <div id="skills-abilities">
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">HTML5</div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress_Q" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">CSS3</div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress_W" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress_E" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress_R" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Less</div>
+                            </div>
+
+                            <div class="progress">
+                                <div class="progress-bar" id="progress_T" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                            </div>
+
+                        </div>
+        
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr id="three-hr" color="#CC6666" width="65%" noshade="noshade"/>
+
+        <section id="kontakt">
+            <div class="container">
+
+                <div class="writter-section">
+                    <h2>Formularz kontaktowy</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat repellendus necessitatibus odit nobis rem reiciendis laborum itaque laudantium libero. Numquam saepe rerum earum fugit. Illum, facilis minus tempora quisquam velit sequi modi voluptates, voluptatem dolore natus ab! Magni labore quas excepturi totam assumenda laboriosam modi? Eos dolor in beatae!</p>
+                </div>
+
+                    <div class="row" id="social-icon">      
+                        <div class="col-sm-12 col-md-12 col-lg-3 mx-auto" id="social-one">
+                            <a href="https://www.snapchat.com/">
+                                <i class="demo-icon icon-snapchat-square"></i>
+                            </a>
+                            <h4>Snapchat - Ziom54d4</h4>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 mx-auto" id="social-two">
+                            <a href="https://www.facebook.com">
+                                <i class="demo-icon icon-facebook-squared"></i>
+                            </a>
+                            <h4>Facebook - Jedrek Dzierzak</h4>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3 mx-auto" id="social-three">
+                            <a href="https://twitter.com/?lang=pl">
+                                <i class="demo-icon icon-twitter-squared"></i>
+                            </a>
+                            <h4>Twitter - (Brak)</h4>
+                        </div>
+                    </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2>Copyright © 2018 | Realizacja: Jędrzej Dzierżak</h2>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap.min.js"></script>
+    <script>
+        window.sr = ScrollReveal();
+        sr.reveal('h1, h2, img',{ duration: 750, scale: 0.8, rotation: 90 });
+    </script>
+</body>
+</html>
